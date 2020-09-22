@@ -1,0 +1,204 @@
+body {
+    margin: 0px;
+}
+
+#hamburger {
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    ;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e8505b;
+    align-items: center;
+    color: #f3ecc2;
+    font-size: large;
+}
+
+.navbar div {
+    margin: 10px;
+}
+
+.navbar-link {
+    text-decoration: none;
+    margin: 0px 10px;
+    color: #f3ecc2;
+    font-size: 1.4rem;
+    word-break: unset;
+    min-height: 44px;
+    min-width: 44px;
+}
+
+.banner {
+    background-image: url("/images/heros/hero-image_2.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+
+.card {
+    margin: 10px;
+    padding: 15px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: gainsboro;
+}
+
+.footer {
+    margin-top: 50px;
+    background-color: #14b1ab;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+#drawer {
+    z-index: 1000;
+    top: 0px;
+    position: fixed;
+    height: 100%;
+    width: 200px;
+    background-color: white;
+    transform: translate(-250px, 0);
+    display: flex;
+    flex-direction: column;
+}
+
+#drawer a {
+    display: flex;
+    align-items: center;
+    padding: 0px 5px;
+    color: black;
+}
+
+#drawer.open {
+    transform: translate(0, 0)
+}
+
+.quote-item {
+    position: absolute;
+    background-color: #f9d56e;
+    margin-top: 30px
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #bf1722;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .list-item {
+        margin: 10px 20px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px
+    }
+    .view-device {
+        display: block;
+    }
+    .view-dekstop {
+        display: none;
+    }
+    #hamburger {
+        display: flex;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .list-item {
+        margin: 10px 20px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px
+    }
+    .view-device {
+        display: block;
+    }
+    .view-dekstop {
+        display: none;
+    }
+    #hamburger {
+        display: flex;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .list-item {
+        margin: 10px 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px
+    }
+    .view-device {
+        display: block;
+    }
+    .view-dekstop {
+        display: none;
+    }
+    #hamburger {
+        display: flex;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .list-item {
+        margin: 10px 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px
+    }
+    .view-device {
+        display: none;
+    }
+    .view-dekstop {
+        display: block;
+    }
+    #hamburger {
+        display: none;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .list-item {
+        margin: 10px 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px
+    }
+    .view-device {
+        display: none;
+    }
+    .view-dekstop {
+        display: block;
+    }
+    #hamburger {
+        display: none;
+    }
+}
